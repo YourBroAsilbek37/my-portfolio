@@ -66,7 +66,7 @@ const Resume = () => {
           >
             Experience
           </li>
-          <li
+          <li 
             onClick={() =>
               setEducationData(false) &
               setSkillData(false) &
@@ -75,8 +75,8 @@ const Resume = () => {
             }
             className={`${
               achievementData
-                ? "border-designColor rounded-lg"
-                : "border-transparent"
+                ? "border-designColor rounded-lg "
+                : "border-transparent opacity-50 pointer-events-none"
             } resumeLi`}
           >
             Achievements
