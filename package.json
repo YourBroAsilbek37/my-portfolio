@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "caniuse-lite": "^1.0.30001672",
+    "daisyui": "^5.0.9",
     "framer-motion": "^8.4.2",
     "react": "^18.2.0",
     "react-animated-cursor": "^2.11.2",
