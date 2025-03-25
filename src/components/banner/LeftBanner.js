@@ -34,9 +34,7 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+          I'm a full-stack developer passionate about crafting high-performance web applications. With expertise in modern frameworks and best practices, I build seamless and scalable solutions. Cybersecurity is always a priority, ensuring that every project is both efficient and secure.
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between" data-aos="fade-up">
