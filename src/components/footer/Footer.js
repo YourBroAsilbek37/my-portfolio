@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaLinkedinIn, FaTelegram, FaMailBulk, FaEnvelope, FaTiktok } from "react-icons/fa";
 import {logo, logo2} from "../../assets/index"
+import { SiGmail } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -13,15 +14,22 @@ const Footer = () => {
         <h1 className='text-[20px] font-semibold'>ZetsuCoder</h1>
       </div>
         <div className="flex gap-4">
-          <span className="bannerIcon">
-            <FaFacebookF />
+         <a href='https://t.me/ZetsuCoder' target='_blank' rel='noreferrer'>
+           <span className="bannerIcon">
+            <FaTelegram />
           </span>
-          <span className="bannerIcon">
-            <FaTwitter />
+         </a>
+          <a href="mailto:codewiizard@gmail.com">
+  <span className="bannerIcon">
+    <SiGmail />
+  </span>
+</a>
+
+          <a href='https://www.tiktok.com/@zetsucoder' target='_blank' rel='noreferrer'>
+            <span className="bannerIcon">
+            <FaTiktok />
           </span>
-          <span className="bannerIcon">
-            <FaLinkedinIn />
-          </span>
+          </a>
         </div>
       </div>
       <div className="w-full h-full">

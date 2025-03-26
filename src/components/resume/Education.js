@@ -4,9 +4,10 @@ import ResumeCard from "./ResumeCard";
 
 const Education = () => {
   return (
-    <motion.div initial={{ opacity: 0, y: 50 }} 
-    whileInView={{ opacity: 1, y: 0 }} 
-    transition={{ duration: 0.5 }}
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
@@ -14,7 +15,9 @@ const Education = () => {
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2021 - 2024</p>
-          <h2 className="text-3xl md:text-4xl font-bold">My Learning Journey</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">
+            My Learning Journey
+          </h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
@@ -47,8 +50,10 @@ const Education = () => {
       {/* Experience Section */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <p className="text-sm text-designColor tracking-[4px]">2022 - 2024</p>
-          <h2 className="text-3xl md:text-4xl font-bold">Projects & Experience</h2>
+          <p className="text-sm text-designColor tracking-[4px]">2024 - 2025</p>
+          <h2 className="text-3xl md:text-4xl font-bold">
+            My Learning Journey
+          </h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard

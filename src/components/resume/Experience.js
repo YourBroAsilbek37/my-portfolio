@@ -18,13 +18,13 @@ const Experience = () => {
         <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="Fullstack Developer"
-            subTitle="MOdevco - (2024 - Present)"
+            subTitle="MOdevco team - (2024 - Present)"
             result="Uzbekistan"
             des="Combining frontend and backend skills to build complete applications with modern frameworks."
           />
           <ResumeCard
             title="Mobile Developer"
-            subTitle="MOdevco Team - (2024 - 2025)"
+            subTitle="MOdevco Team - (2023 - 2024)"
             result="Uzbekistan"
             des="Developed mobile applications using React Native, integrating APIs and authentication."
           />
