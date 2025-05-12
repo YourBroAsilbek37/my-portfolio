@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div className='w-[60px] h-[60px] flex items-center gap-3'>
         <img className='rounded-full border-[3px] border-[#282C31]' src={logo2} alt="logo" />
-        <h1 className='text-[20px] font-semibold'>ZetsuCoder</h1>
+        <h1 className='text-[20px] font-semibold'>Avenox</h1>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">

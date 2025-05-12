@@ -20,10 +20,10 @@ const Skills = () => {
         </div>
         <div className=" w-full flex flex-col gap-6">
           {[
-            { name: 'CSS', src: css, width: '3.7%', progress: 90 },
-            { name: 'ChakraUI', src: chakra, width: '5%', progress: 100 },
+            { name: 'CSS', src: css, width: '3.7%', progress: 96 },
+            { name: 'ChakraUI', src: chakra, width: '5%', progress: 80 },
             { name: 'TailwindCSS', src: tail, width: '5%', progress: 100 },
-            { name: 'MaterialUI', src: mui, width: '5%', progress: 100 },
+            { name: 'MaterialUI', src: mui, width: '5%', progress: 86 },
             { name: 'SCSS', src: sass, width: '5%', progress: 100 },
           ].map((skill, index) => (
             <div key={index} className="overflow-x-hidden h-[55px]">
@@ -58,11 +58,11 @@ const Skills = () => {
         </div>
         <div className="flex flex-col gap-6">
           {[
-            { name: 'HTML 5', src: html, width: '5%', progress: 90 },
-            { name: 'JavaScript', src: js, width: '5%', progress: 80 },
-            { name: 'ReactJS', src: react, width: '5%', progress: 90 },
-            { name: 'NextJS', src: next, width: '5%', progress: 80 },
-            { name: 'React Native', src: native, width: '4.5%', progress: 80 },
+            { name: 'HTML 5', src: html, width: '5%', progress: 99 },
+            { name: 'JavaScript', src: js, width: '5%', progress: 75 },
+            { name: 'ReactJS', src: react, width: '5%', progress: 80 },
+            { name: 'NextJS', src: next, width: '5%', progress: 95 },
+            { name: 'React Native', src: native, width: '4.5%', progress: 60 },
           ].map((skill, index) => (
             <div key={index} className="overflow-x-hidden h-[55px]">
               <p className="text-sm uppercase flex items-center gap-[5px] font-medium">
@@ -98,11 +98,11 @@ const Skills = () => {
         </div>
         <div className="flex flex-col gap-6">
           {[
-            { name: 'Node Js', src: node, width: '5%', progress: 70 },
-            { name: 'Express Js', src: express, width: '5%', progress: 70 },
-            { name: 'Mongo DB', src: db, width: '5%', progress: 80 },
-            { name: 'Nest Js', src: nest, width: '5%', progress: 50 },
-            { name: 'Firebase', src: firebase, width: '4.5%', progress: 70 },
+            { name: 'Node Js', src: node, width: '5%', progress: 50 },
+            { name: 'Express Js', src: express, width: '5%', progress: 40 },
+            { name: 'Mongo DB', src: db, width: '5%', progress: 45 },
+            { name: 'Nest Js', src: nest, width: '5%', progress: 30 },
+            { name: 'Firebase', src: firebase, width: '4.5%', progress: 50 },
           ].map((skill, index) => (
             <div key={index} className="overflow-x-hidden h-[55px]">
               <p className="text-sm uppercase flex items-center gap-[5px] font-medium">

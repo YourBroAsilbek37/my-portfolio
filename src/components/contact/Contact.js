@@ -1,58 +1,58 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
+"use client"
+import { useState } from "react"
+import Title from "../layouts/Title"
+import ContactLeft from "./ContactLeft"
 
 const Contact = () => {
-  const [username, setUsername] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-  const [errMsg, setErrMsg] = useState("");
-  const [successMsg, setSuccessMsg] = useState("");
+  const [username, setUsername] = useState("")
+  const [phoneNumber, setPhoneNumber] = useState("")
+  const [email, setEmail] = useState("")
+  const [subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
+  const [errMsg, setErrMsg] = useState("")
+  const [successMsg, setSuccessMsg] = useState("")
 
   // ========== Email Validation start here ==============
   const emailValidation = () => {
     return String(email)
       .toLocaleLowerCase()
-      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
-  };
+      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/)
+  }
   // ========== Email Validation end here ================
 
   const handleSend = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     if (username === "") {
-      setErrMsg("Username is required!");
+      setErrMsg("Ism kiritish majburiy!")
     } else if (phoneNumber === "") {
-      setErrMsg("Phone number is required!");
+      setErrMsg("Telefon raqam kiritish majburiy!")
     } else if (email === "") {
-      setErrMsg("Please give your Email!");
+      setErrMsg("Iltimos, elektron pochtangizni kiriting!")
     } else if (!emailValidation(email)) {
-      setErrMsg("Give a valid Email!");
+      setErrMsg("To'g'ri elektron pochta manzilini kiriting!")
     } else if (subject === "") {
-      setErrMsg("Plese give your Subject!");
+      setErrMsg("Iltimos, mavzuni kiriting!")
     } else if (message === "") {
-      setErrMsg("Message is required!");
+      setErrMsg("Xabar kiritish majburiy!")
     } else {
-      setSuccessMsg(
-        `Thank you dear ${username}, Your Messages has been sent Successfully!`
-      );
-      setErrMsg("");
-      setUsername("");
-      setPhoneNumber("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
+      setSuccessMsg(`Rahmat, hurmatli ${username}, Xabaringiz muvaffaqiyatli yuborildi!`)
+      setErrMsg("")
+      setUsername("")
+      setPhoneNumber("")
+      setEmail("")
+      setSubject("")
+      setMessage("")
     }
-  };
+  }
   return (
-    <section data-aos="fade-up"
-     data-aos-anchor-placement="top-center"
+    <section
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
       id="contact"
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <div className="flex justify-center items-center text-center">
-        <Title title="CONTACT" des="Contact With Me" />
+        <Title title="ALOQA" des="Men bilan bog'laning" />
       </div>
       <div className="w-full">
         <div className="w-full h-auto flex flex-col lgl:flex-row justify-between">
@@ -71,72 +71,50 @@ const Contact = () => {
               )}
               <div className="w-full flex flex-col lgl:flex-row gap-10">
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Your name
-                  </p>
+                  <p className="text-sm text-gray-400 uppercase tracking-wide">Ismingiz</p>
                   <input
                     onChange={(e) => setUsername(e.target.value)}
                     value={username}
-                    className={`${
-                      errMsg === "Username is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
+                    className={`${errMsg === "Ism kiritish majburiy!" && "outline-designColor"} contactInput`}
                     type="text"
                   />
                 </div>
                 <div className="w-full lgl:w-1/2 flex flex-col gap-4">
-                  <p className="text-sm text-gray-400 uppercase tracking-wide">
-                    Phone Number
-                  </p>
+                  <p className="text-sm text-gray-400 uppercase tracking-wide">Telefon raqam</p>
                   <input
                     onChange={(e) => setPhoneNumber(e.target.value)}
                     value={phoneNumber}
-                    className={`${
-                      errMsg === "Phone number is required!" &&
-                      "outline-designColor"
-                    } contactInput`}
+                    className={`${errMsg === "Telefon raqam kiritish majburiy!" && "outline-designColor"} contactInput`}
                     type="text"
                   />
                 </div>
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Email
-                </p>
+                <p className="text-sm text-gray-400 uppercase tracking-wide">Elektron pochta</p>
                 <input
                   onChange={(e) => setEmail(e.target.value)}
                   value={email}
                   className={`${
-                    errMsg === "Please give your Email!" &&
-                    "outline-designColor"
+                    errMsg === "Iltimos, elektron pochtangizni kiriting!" && "outline-designColor"
                   } contactInput`}
                   type="email"
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Subject
-                </p>
+                <p className="text-sm text-gray-400 uppercase tracking-wide">Mavzu</p>
                 <input
                   onChange={(e) => setSubject(e.target.value)}
                   value={subject}
-                  className={`${
-                    errMsg === "Plese give your Subject!" &&
-                    "outline-designColor"
-                  } contactInput`}
+                  className={`${errMsg === "Iltimos, mavzuni kiriting!" && "outline-designColor"} contactInput`}
                   type="text"
                 />
               </div>
               <div className="flex flex-col gap-4">
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Message
-                </p>
+                <p className="text-sm text-gray-400 uppercase tracking-wide">Xabar</p>
                 <textarea
                   onChange={(e) => setMessage(e.target.value)}
                   value={message}
-                  className={`${
-                    errMsg === "Message is required!" && "outline-designColor"
-                  } contactTextArea`}
+                  className={`${errMsg === "Xabar kiritish majburiy!" && "outline-designColor"} contactTextArea`}
                   cols="30"
                   rows="8"
                 ></textarea>
@@ -146,7 +124,7 @@ const Contact = () => {
                   onClick={handleSend}
                   className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
                 >
-                  Send Message
+                  Xabar yuborish
                 </button>
               </div>
               {errMsg && (
@@ -164,7 +142,7 @@ const Contact = () => {
         </div>
       </div>
     </section>
-  );
+  )
 }
 
 export default Contact

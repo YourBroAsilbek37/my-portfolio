@@ -1,51 +1,54 @@
-import React from 'react';
-import { AiFillAppstore } from "react-icons/ai";
-import { FaMobile, FaGlobe } from "react-icons/fa";
-import { SiProgress, SiAntdesign,  } from "react-icons/si";
-import Title from '../layouts/Title';
-import Card from './Card';
-import { TbApi } from "react-icons/tb";
+"use client"
+import { AiFillAppstore } from "react-icons/ai"
+import { FaMobile, FaGlobe } from "react-icons/fa"
+import { SiAntdesign } from "react-icons/si"
+import { TbApi } from "react-icons/tb"
+import Title from "../layouts/Title"
+import Card from "./Card"
 
 const Features = () => {
   return (
-    <section
-      id="features"
-      className="w-full py-20 border-b-[1px] border-b-black"
-    >
-      <Title title="Features" des="What I Do" />
+    <section id="features" className="w-full py-20 border-b-[1px] border-b-black">
+      <Title title="Xizmatlar" des="Taklif qiladigan xizmatlarim" />
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
         <Card
-          title="Frontend Development"
-          des="Building responsive and visually appealing user interfaces using modern technologies like React.js, Tailwind CSS, and more." m={"-1"}
+          title="Frontend Dasturlash"
+          des="React.js, Tailwind CSS va boshqa zamonaviy texnologiyalardan foydalanib moslashuvchan va vizual jihatdan jozibali foydalanuvchi interfeyslarini yaratish."
+          m={"-1"}
         />
         <Card
-          title="Backend Development"
-          des="Creating robust and scalable backend systems with Node.js, Express.js, and integrating with databases like MongoDB." m={"-5"}
+          title="Backend Dasturlash"
+          des="Node.js, Express.js yordamida mustahkam va kengaytiriladigan backend tizimlarini yaratish va MongoDB kabi ma'lumotlar bazalari bilan integratsiya qilish."
+          m={"-5"}
           icon={<AiFillAppstore />}
         />
         <Card
-          title="Mobile App Development"
-          des="Designing and developing cross-platform mobile applications with frameworks like React Native and Flutter." m={"-5"}
+          title="Mobil Ilova Dasturlash"
+          des="React Native va Flutter kabi freymvorklar bilan kross-platforma mobil ilovalarni loyihalash va ishlab chiqish."
+          m={"-5"}
           icon={<FaMobile />}
         />
         <Card
-          title="UI/UX Design"
-          des="Crafting intuitive and user-friendly interfaces using tools like Figma to enhance user experience." m={"0"}
+          title="UI/UX Dizayn"
+          des="Foydalanuvchi tajribasini yaxshilash uchun Figma kabi vositalardan foydalanib intuitiv va foydalanuvchiga qulay interfeyslarni yaratish."
+          m={"0"}
           icon={<SiAntdesign />}
         />
         <Card
-          title="Website Hosting"
-          des="Deploying and managing websites on platforms like AWS, Vercel, and Netlify for optimal performance and reliability." m={"-1"}
+          title="Veb-sayt Hosting"
+          des="Optimal ishlash va ishonchlilik uchun AWS, Vercel va Netlify kabi platformalarda veb-saytlarni joylashtirish va boshqarish."
+          m={"-1"}
           icon={<FaGlobe />}
         />
         <Card
-          title="API Integration"
-          des="Connecting applications with third-party services and custom APIs to streamline functionality and data exchange." m={"-5"}
+          title="API Integratsiya"
+          des="Funksionallik va ma'lumotlar almashinuvini osonlashtirish uchun ilovalarni uchinchi tomon xizmatlari va maxsus API'lar bilan bog'lash."
+          m={"-5"}
           icon={<TbApi />}
         />
       </div>
     </section>
-  );
+  )
 }
 
-export default Features;
+export default Features

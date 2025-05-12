@@ -1,57 +1,49 @@
-import React, { useEffect } from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact, FaTiktok, FaTelegram, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs, SiGmail, SiChakraui, SiNestjs } from "react-icons/si";
-import AOS from "aos";
-import "aos/dist/aos.css";
+"use client"
+import { useEffect } from "react"
+import { useTypewriter, Cursor } from "react-simple-typewriter"
+import { FaReact, FaVk, FaTelegram, FaJs } from "react-icons/fa"
+import { SiTailwindcss, SiNextdotjs, SiGmail } from "react-icons/si"
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Fullstack Developer"],
+    words: ["Frontend Dasturchi"],
     loop: true,
     typeSpeed: 80,
     deleteSpeed: 80,
     delaySpeed: 2000,
-  });
+  })
+
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Animation occurs once when scrolling down
-    });
-  }, []);
+      duration: 1000, // Animatsiya davomiyligi millisekundlarda
+      once: true, // Animatsiya pastga aylanganda bir marta sodir bo'ladi
+    })
+  }, [])
+
   return (
     <div className="w-full lgl:w-1/2 flex flex-col gap-20">
       <div className="flex flex-col gap-5" data-aos="fade-up">
-        <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
+        <h4 className="text-lg font-normal">MENING DUNYOIMGA XUSH KELIBSIZ</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm{" "}
-          <span className="text-designColor capitalize">ZetsuCoder</span>
+          Salom, men <span className="text-designColor capitalize">Avenox</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
-          a <span>{text}</span>
-          <Cursor
-            cursorBlinking="false"
-            cursorStyle="|"
-            cursorColor="#ff014f"
-          />
+          <span>{text}</span>
+          <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="#ff014f" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I'm a full-stack developer passionate about crafting high-performance
-          web applications. With expertise in modern frameworks and best
-          practices, I build seamless and scalable solutions. Cybersecurity is
-          always a priority, ensuring that every project is both efficient and
-          secure.
+          Men yuqori samarali veb-ilovalarni yaratishga ishtiyoqli frontend dasturchiman. Zamonaviy freymvorklar va eng
+          yaxshi amaliyotlarda tajribaga ega bo'lib, silliq va kengaytiriladigan yechimlarni yarataman. Kiberhavfsizlik
+          har doim ustuvor vazifa bo'lib, har bir loyiha ham samarali, ham xavfsiz bo'lishini ta'minlayman.
         </p>
       </div>
-      <div
-        className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between"
-        data-aos="fade-up"
-      >
+      <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between" data-aos="fade-up">
         <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">
-            Find me in
-          </h2>
+          <h2 className="text-base uppercase font-titleFont mb-4">Meni topish mumkin</h2>
           <div className="flex gap-4">
-            <a href="https://t.me/ZetsuCoder" target="_blank" rel="noreferrer">
+            <a href="https://t.me/Asilbek037" target="_blank" rel="noreferrer">
               <span className="bannerIcon">
                 <FaTelegram />
               </span>
@@ -61,22 +53,15 @@ const LeftBanner = () => {
                 <SiGmail />
               </span>
             </a>
-
-            <a
-              href="https://www.tiktok.com/@zetsucoder"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://www.tiktok.com/@zetsucoder" target="_blank" rel="noreferrer">
               <span className="bannerIcon">
-                <FaTiktok />
+                <FaVk />
               </span>
             </a>
           </div>
         </div>
         <div>
-          <h2 className="text-base uppercase font-titleFont mb-4">
-            BEST SKILL ON
-          </h2>
+          <h2 className="text-base uppercase font-titleFont mb-4">ENG YAXSHI KO'NIKMALAR</h2>
           <div className="flex gap-4">
             <span className="bannerIcon">
               <FaReact />
@@ -85,16 +70,16 @@ const LeftBanner = () => {
               <SiNextdotjs />
             </span>
             <span className="bannerIcon">
-              <SiChakraui />
+              <SiTailwindcss />
             </span>
             <span className="bannerIcon">
-              <FaNodeJs />
+              <FaJs />
             </span>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LeftBanner;
+export default LeftBanner

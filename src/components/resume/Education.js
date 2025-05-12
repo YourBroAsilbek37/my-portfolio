@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
-import ResumeCard from "./ResumeCard";
+"use client"
+import { motion } from "framer-motion"
+import ResumeCard from "./ResumeCard"
 
 const Education = () => {
   return (
@@ -11,73 +11,69 @@ const Education = () => {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
     >
-      {/* Learning Journey Section */}
+      {/* O'rganish Yo'li Bo'limi */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2021 - 2024</p>
-          <h2 className="text-3xl md:text-4xl font-bold">
-            My Learning Journey
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Mening O'rganish Yo'lim</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="HTML & CSS"
-            subTitle="Fundamentals of Web Development"
-            result="Mastered"
-            des="Learned the foundations of web structure and styling, including responsive design principles."
+            subTitle="Veb-dasturlash asoslari"
+            result="Mukammal"
+            des="Veb-tuzilish va dizayn asoslarini, shu jumladan moslashuvchan dizayn tamoyillarini o'rgandim."
           />
           <ResumeCard
             title="JavaScript & React.js"
-            subTitle="Building Interactive User Interfaces"
-            result="Advanced"
-            des="Gained proficiency in JavaScript ES6+, React.js, component-based architecture, and state management."
+            subTitle="Interaktiv foydalanuvchi interfeyslarini yaratish"
+            result="Yuqori daraja"
+            des="JavaScript ES6+, React.js, komponentlarga asoslangan arxitektura va holatni boshqarish bo'yicha malaka oshirdim."
           />
           <ResumeCard
-            title="UI Frameworks & Styling"
+            title="UI Freymvorklar & Uslublash"
             subTitle="Chakra UI, Tailwind CSS, Material UI"
-            result="Proficient"
-            des="Explored modern UI frameworks to enhance user experience and streamline development."
+            result="Malakali"
+            des="Foydalanuvchi tajribasini yaxshilash va ishlab chiqarishni osonlashtirish uchun zamonaviy UI freymvorklarni o'rgandim."
           />
           <ResumeCard
-            title="Backend Development"
-            subTitle="Node.js, Express.js, Databases"
-            result="Proficient"
-            des="Developed RESTful APIs, worked with databases like MongoDB & MySQL, and handled authentication."
+            title="Backend Dasturlash"
+            subTitle="Node.js, Express.js, Ma'lumotlar bazalari"
+            result="Malakali"
+            des="RESTful API'larni ishlab chiqdim, MongoDB & MySQL kabi ma'lumotlar bazalari bilan ishladim va autentifikatsiyani boshqardim."
           />
         </div>
       </div>
 
-      {/* Experience Section */}
+      {/* Tajriba Bo'limi */}
       <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <p className="text-sm text-designColor tracking-[4px]">2024 - 2025</p>
-          <h2 className="text-3xl md:text-4xl font-bold">
-            My Learning Journey
-          </h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Mening O'rganish Yo'lim</h2>
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-auto border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            title="Full-Stack Development"
-            subTitle="Building Scalable Web Apps"
-            result="Advanced"
-            des="Developed full-stack applications using React.js, Next.js, and backend technologies."
+            title="Full-Stack Dasturlash"
+            subTitle="Kengaytiriladigan veb-ilovalarni yaratish"
+            result="Yuqori daraja"
+            des="React.js, Next.js va backend texnologiyalaridan foydalanib to'liq stack ilovalarni ishlab chiqdim."
           />
           <ResumeCard
-            title="Mobile Development"
-            subTitle="React Native & Cross-Platform Apps"
-            result="Intermediate"
-            des="Built mobile applications with React Native, focusing on UI/UX and API integration."
+            title="Mobil Dasturlash"
+            subTitle="React Native & Kross-platforma ilovalar"
+            result="O'rta daraja"
+            des="React Native yordamida mobil ilovalarni yaratdim, UI/UX va API integratsiyasiga e'tibor qaratdim."
           />
           <ResumeCard
-            title="Cybersecurity & Best Practices"
-            subTitle="Securing Web Applications"
-            result="Intermediate"
-            des="Learned about web security, authentication, and best coding practices to prevent vulnerabilities."
+            title="Kiberhavfsizlik & Eng yaxshi amaliyotlar"
+            subTitle="Veb-ilovalarni himoyalash"
+            result="O'rta daraja"
+            des="Veb-xavfsizlik, autentifikatsiya va zaifliklarning oldini olish uchun eng yaxshi kodlash amaliyotlari haqida o'rgandim."
           />
         </div>
       </div>
     </motion.div>
-  );
-};
+  )
+}
 
-export default Education;
+export default Education
